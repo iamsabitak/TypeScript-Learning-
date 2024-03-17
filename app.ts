@@ -52,7 +52,6 @@ console.log(foo);
 
 //interface
 // interface ==> allows us to define the structure or shape of an object and specify the properties and methods that an object has or should have.
-
 interface userType {
   name: string;
   age: number;
@@ -79,6 +78,7 @@ function hello(aa: number, bb?: number): number {
 var x = hello(2);
 console.log(x);
 
+
 //classes in ts
 class Name {
   name: string = "sabu";
@@ -95,7 +95,7 @@ console.log(ag.namee());
 //Inheritance in ts
 class Parent {
   name: string;
-  setName(name): void {
+  setName(name:string): void {
     this.name = name;
   }
 }
@@ -124,3 +124,19 @@ function users<T>(data: T): T {
   return data;
 }
 console.log(users({ name: "sabu", age: 19 }));
+
+// enums in ts
+// By default, enums will initialize the first value to 0 and add 1 to each additional value
+enum Days {
+  sun,
+  mon,
+  tue,
+  wed,
+  thu,
+  fri,
+  sat,
+}
+let whichDay: Days;
+whichDay = Days.fri;
+console.log(whichDay);
+

@@ -127,3 +127,18 @@ function users(data) {
     return data;
 }
 console.log(users({ name: "sabu", age: 19 }));
+// enums in ts
+// By default, enums will initialize the first value to 0 and add 1 to each additional value
+var Days;
+(function (Days) {
+    Days[Days["sun"] = 0] = "sun";
+    Days[Days["mon"] = 1] = "mon";
+    Days[Days["tue"] = 2] = "tue";
+    Days[Days["wed"] = 3] = "wed";
+    Days[Days["thu"] = 4] = "thu";
+    Days[Days["fri"] = 5] = "fri";
+    Days[Days["sat"] = 6] = "sat";
+})(Days || (Days = {}));
+var whichDay;
+whichDay = Days.fri;
+console.log(whichDay);
