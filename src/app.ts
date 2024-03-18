@@ -156,4 +156,3 @@ console.log(whichDay);
 // let d1 = new Symbol1();
 // console.log(d1[s1]());
 
-// Configuration file in ts
