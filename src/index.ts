@@ -31,3 +31,12 @@ let item: string;
 if (typeof user === "string") {
   item = user;
 }
+
+//never type in ts
+// never effectively throws an error whenever it is defined.
+function apiError(api, code): never {
+  throw { api, code };
+}
+console.log(apiError("server side error", 400));
+
+//
