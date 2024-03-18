@@ -38,3 +38,9 @@ if (typeof user === "string") {
 //   throw { api, code };
 // }
 // console.log(apiError("server side error", 400));
+
+//type casting in ts
+
+let userName: unknown = "Peter";
+console.log((userName as string).length); //by using as
+console.log((<string>userName).length); //by using <>
