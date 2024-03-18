@@ -34,9 +34,7 @@ if (typeof user === "string") {
 
 //never type in ts
 // never effectively throws an error whenever it is defined.
-function apiError(api: string, code: number): never {
-  throw { api, code };
-}
-console.log(apiError("server side error", 400));
-
-//
+// function apiError(api: string, code: number): never {
+//   throw { api, code };
+// }
+// console.log(apiError("server side error", 400));
