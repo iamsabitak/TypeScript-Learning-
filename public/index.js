@@ -7,3 +7,14 @@ const a = 10;
 const b = "asas";
 const c = true;
 console.log(a, b, c);
+//void in typescript
+// Return Type
+function multiply(a, b) {
+    return a * b;
+}
+console.log(multiply(2, 2));
+//Void Return Type
+function printHello() {
+    console.log("Hello!");
+}
+printHello();

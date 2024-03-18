@@ -10,3 +10,16 @@ const b: cosType = "asas";
 const c: cosType = true;
 console.log(a, b, c);
 
+//void in typescript
+// Return Type
+function multiply(a: number, b: number) {
+  return a * b;
+}
+
+console.log(multiply(2, 2));
+
+//Void Return Type
+function printHello(): void {
+  console.log("Hello!");
+}
+printHello();
