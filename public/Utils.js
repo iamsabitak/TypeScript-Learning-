@@ -1,10 +1,12 @@
 "use strict";
-var UserUtils;
-(function (UserUtils) {
-    class Parents {
-        setAge(age) {
-            this.age = age;
-        }
-    }
-    UserUtils.Parents = Parents;
-})(UserUtils || (UserUtils = {}));
+// namespace UserUtils {
+//   export class Parents {
+//     age: number;
+//     setAge(age: number): void {
+//       this.age = age;
+//     }
+//   }
+//   export interface userType {
+//     getAge();
+//   }
+// }

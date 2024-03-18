@@ -92,20 +92,20 @@ var ag = new Name();
 console.log(ag.namee());
 
 //Inheritance in ts
-class Parent {
-  name: string;
-  setName(name: string): void {
-    this.name = name;
-  }
-}
-class Child extends Parent {
-  getName(): string {
-    return this.name;
-  }
-}
-var c1 = new Child();
-c1.setName("niru");
-console.log(c1.getName());
+// class Parent {
+//   name: string;
+//   setName(name: string): void {
+//     this.name = name;
+//   }
+// }
+// class Child extends Parent {
+//   getName(): string {
+//     return this.name;
+//   }
+// }
+// var c1 = new Child();
+// c1.setName("niru");
+// console.log(c1.getName());
 
 //modules
 import Teacher from "./teacher";

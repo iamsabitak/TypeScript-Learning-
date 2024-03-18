@@ -77,19 +77,20 @@ class Name {
 var ag = new Name();
 console.log(ag.namee());
 //Inheritance in ts
-class Parent {
-    setName(name) {
-        this.name = name;
-    }
-}
-class Child extends Parent {
-    getName() {
-        return this.name;
-    }
-}
-var c1 = new Child();
-c1.setName("niru");
-console.log(c1.getName());
+// class Parent {
+//   name: string;
+//   setName(name: string): void {
+//     this.name = name;
+//   }
+// }
+// class Child extends Parent {
+//   getName(): string {
+//     return this.name;
+//   }
+// }
+// var c1 = new Child();
+// c1.setName("niru");
+// console.log(c1.getName());
 //modules
 const teacher_1 = __importDefault(require("./teacher"));
 const student_1 = __importDefault(require("./student"));
