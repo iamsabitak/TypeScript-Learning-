@@ -143,19 +143,17 @@ var whichDay;
 whichDay = Days.fri;
 console.log(whichDay);
 //symbols in ts
-var s1 = Symbol();
-// console.log(s1);
-// const object = {
-//   [s1]: "Hello",
-// };
-// console.log(object[s1]);
-var Symbol1 = /** @class */ (function () {
-    function Symbol1() {
-    }
-    Symbol1.prototype[s1] = function () {
-        return "Some Data";
-    };
-    return Symbol1;
-}());
-var d1 = new Symbol1();
-console.log(d1[s1]());
+// let s1 = Symbol();
+// // console.log(s1);
+// // const object = {
+// //   [s1]: "Hello",
+// // };
+// // console.log(object[s1]);
+// class Symbol1 {
+//   [s1]() {
+//     return "Some Data";
+//   }
+// }
+// let d1 = new Symbol1();
+// console.log(d1[s1]());
+// Configuration file in ts
