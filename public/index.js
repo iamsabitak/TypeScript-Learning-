@@ -18,3 +18,10 @@ function printHello() {
     console.log("Hello!");
 }
 printHello();
+//Unknown type in ts
+let user;
+(user = "mario"), (user = 12);
+let item;
+if (typeof user === "string") {
+    item = user;
+}

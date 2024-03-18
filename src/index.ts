@@ -23,3 +23,11 @@ function printHello(): void {
   console.log("Hello!");
 }
 printHello();
+
+//Unknown type in ts
+let user: unknown;
+(user = "mario"), (user = 12);
+let item: string;
+if (typeof user === "string") {
+  item = user;
+}
