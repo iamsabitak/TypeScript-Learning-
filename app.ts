@@ -78,7 +78,6 @@ function hello(aa: number, bb?: number): number {
 var x = hello(2);
 console.log(x);
 
-
 //classes in ts
 class Name {
   name: string = "sabu";
@@ -95,7 +94,7 @@ console.log(ag.namee());
 //Inheritance in ts
 class Parent {
   name: string;
-  setName(name:string): void {
+  setName(name: string): void {
     this.name = name;
   }
 }
@@ -140,3 +139,19 @@ let whichDay: Days;
 whichDay = Days.fri;
 console.log(whichDay);
 
+//symbols in ts
+let s1 = Symbol();
+// console.log(s1);
+
+// const object = {
+//   [s1]: "Hello",
+// };
+// console.log(object[s1]);
+
+class Symbol1 {
+  [s1]() {
+    return "Some Data";
+  }
+}
+let d1 = new Symbol1();
+console.log(d1[s1]());
