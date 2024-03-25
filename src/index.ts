@@ -50,7 +50,7 @@ let foo = 55;
   console.log(foo);
 
   //explicit - writing out the type
-  let name: string = "explicit-sabu";
+  let name0: string = "explicit-sabu";
   console.log(name);
 
   //implicit - TypeScript will "guess" the type, based on the assigned value
@@ -63,22 +63,22 @@ let foo = 55;
     year: 2009,
   };
 
-  console.log(car);let foo = 55;
+  console.log(car);let foo1 = 55;
   // foo = "hello"; //attempts to re-assign the value to a different type
   console.log(foo);
 
   //explicit - writing out the type
-  let name: string = "explicit-sabu";
-  console.log(name);
+  let name2: string = "explicit-sabu";
+  console.log(name2);
 
   //implicit - TypeScript will "guess" the type, based on the assigned value
-  let name1 = "implicit-sabbu";
-  console.log(name1);
+  let name11 = "implicit-sabbu";
+  console.log(name11);
 
-  const car: { type: string; model: string; year: number } = {
+  const car1: { type: string; model: string; year: number } = {
     type: "Toyota",
     model: "Corolla",
     year: 2009,
   };
 
-  console.log(car);
+  console.log(car1);

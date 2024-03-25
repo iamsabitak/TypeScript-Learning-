@@ -35,3 +35,33 @@ if (typeof user === "string") {
 let userName = "Peter";
 console.log(userName.length); //by using as
 console.log(userName.length); //by using <>
+let foo = 55;
+// foo = "hello"; //attempts to re-assign the value to a different type
+console.log(foo);
+//explicit - writing out the type
+let name0 = "explicit-sabu";
+console.log(name);
+//implicit - TypeScript will "guess" the type, based on the assigned value
+let name1 = "implicit-sabbu";
+console.log(name1);
+const car = {
+    type: "Toyota",
+    model: "Corolla",
+    year: 2009,
+};
+console.log(car);
+let foo1 = 55;
+// foo = "hello"; //attempts to re-assign the value to a different type
+console.log(foo);
+//explicit - writing out the type
+let name2 = "explicit-sabu";
+console.log(name2);
+//implicit - TypeScript will "guess" the type, based on the assigned value
+let name11 = "implicit-sabbu";
+console.log(name11);
+const car1 = {
+    type: "Toyota",
+    model: "Corolla",
+    year: 2009,
+};
+console.log(car1);
