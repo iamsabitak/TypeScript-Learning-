@@ -133,3 +133,25 @@ console.log(whichDay);
 // }
 // let d1 = new Symbol1();
 // console.log(d1[s1]());
+function starBucket() {
+    for (let i = 1; i <= 5; i++) {
+        let line = "";
+        for (let j = 0; j < i; j++) {
+            line += "*";
+        }
+        console.log(line);
+    }
+    // console.log("*\n", "**\n", "***\n", "****\n", "*****\n");
+}
+starBucket();
+function printAsterisks() {
+    for (let i = 5; i >= 1; i--) {
+        let line = "";
+        for (let j = 0; j < i; j++) {
+            line += "*";
+        }
+        console.log(line);
+    }
+}
+// Call the function to execute
+printAsterisks();
